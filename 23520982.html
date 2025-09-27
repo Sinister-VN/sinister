@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#intro">Giới thiệu bản thân</a></li>
+            <li><a href="#contact">Gửi thông tin và liên hệ cùng tôi</a></li>
+        </ul>
+    </nav>
+    
+    <div id="intro" class="intro">
+        <H1>Giới thiệu bản thân</H1>
+        <img src="./assets/img/avatar.webp" alt="Văn Nam" width="100" height="100">
+
+        <h2>Thông tin cơ bản</h2>
+        <ul>
+            <li>Tên: Nguyễn Văn Nam</li>
+            <li>Năm sinh: 2005</li>
+            <li>Chuyên ngành: Hệ thống thông tin</li>
+        </ul>
+
+        <h2>Sở thích</h2>
+        <h3>Món ăn</h3>
+        <ol>
+            <li>Quả na</li>
+            <li>Mì bò rau thơm</li>
+            <li>Bánh đuông dừa</li>
+        </ol>
+        <h3>Giải trí</h3>
+        <h4>Trò chơi</h4>
+        <ul>
+            <li>Bắn bi</li>
+            <li>Nhảy dây</li>
+            <li>Đá cầu</li>
+        </ul>
+        <h4>Bài nhạc yêu thích</h4>
+        <ul>
+            <li>Đôi mắt_Wanbi Tuấn Anh</li>
+            <li>Bối rối_Đông Nhi</li>
+            <li>Anh lại trễ hẹn nữa rồi_Lương Bích Hữu</li>
+        </ul>
+        <h2>Mục tiêu của bản thân</h2>
+        <table>
+            <tr>
+                <th>Mục tiêu</th>
+                <th>Thời hạn</th>
+                <th>Hoàn thành</th>
+            </tr>
+            <tr>
+                <td>Đạt chứng chỉ tiếng Anh</td>
+                <td>01/07/2025</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Tìm được việc làm</td>
+                <td>01/06/2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Học xong đại học</td>
+                <td>01/08/2027</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="contact" class="contact">
+        <H1>Gửi thông tin và giao lưu cùng tôi</H1>
+        <form id="contact-form">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Tin nhắn:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <label>Giới tính:</label><br>
+            <input type="radio" id="male" name="gender" value="Nam">
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label><br><br>
+
+            <label>Sở thích:</label><br>
+            <input type="checkbox" id="music" name="hobbies" value="Nghe nhạc">
+            <label for="music">Nghe nhạc</label>
+            <input type="checkbox" id="gaming" name="hobbies" value="Bơi lội">
+            <label for="gaming">Bơi lội</label>
+            <input type="checkbox" id="reading" name="hobbies" value="Biển">
+            <label for="reading">Biển</label><br><br>
+
+            <label for="major">Ngành:</label>
+            <select id="major" name="major">
+                <option value="Khoa học Máy tính">Khoa học Máy tính</option>
+                <option value="Hệ thống thông tin">Hệ thống thông tin</option>
+                <option value="An toàn thông tin">An toàn thông tin</option>
+                <option value="Kỹ thuật phần mềm">Kỹ thuật phần mềm</option>
+                <option value="Trí tuệ nhân tạo">Trí tuệ nhân tạo</option>
+            </select><br><br>
+
+            <input type="submit" value="Gửi">
+        </form>
+    </div>
+    
+    <footer>
+        <p>©2024 MSSV HoTen</p>
+    </footer>
+</body>
+
+</html>
