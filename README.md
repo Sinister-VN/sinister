@@ -38,9 +38,10 @@ py -m uvicorn app.main:app --reload
 ## API usage
 Request:
 ```bash
-curl.exe -X POST "http://127.0.0.1:8000/predict" `
-  -H "Content-Type: application/json" `
-  -d "{\"text\": \"The government announced a new policy today.\"}"
+Invoke-RestMethod -Uri "http://127.0.0.1:8000/predict" `
+  -Method POST `
+  -ContentType "application/json" `
+  -Body '{"text": "The government announced a new policy today."}'
 ```
 
 Response:
